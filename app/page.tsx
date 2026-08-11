@@ -1,9 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
 import Problem from "@/components/Problem";
 import HowItWorks from "@/components/HowItWorks";
-import Channels from "@/components/Channels";
 import Benefits from "@/components/Benefits";
 import Comparison from "@/components/Comparison";
 import Testimonial from "@/components/Testimonial";
@@ -17,10 +15,8 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      <Stats />
       <Problem />
       <HowItWorks />
-      <Channels />
       <Benefits />
       <Comparison />
       <Testimonial />
