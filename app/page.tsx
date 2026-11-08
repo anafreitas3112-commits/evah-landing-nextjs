@@ -4,6 +4,8 @@ import SobMedida from "@/components/SobMedida";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import FormContato from "@/components/FormContato";
+import IasConectadas from "@/components/IasConectadas";
+import VideoEvah from "@/components/VideoEvah";
 import { TelaAchados, TelaAtendimento, TelaEquipe, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
 import { BotaoWhats, Titulo } from "@/components/ui";
 
@@ -67,6 +69,8 @@ export default function Home() {
         </div>
       </section>
 
+      <VideoEvah />
+
       {/* Pilares */}
       <section className="bg-surface border-y border-border-subtle">
         <div className="max-w-content mx-auto px-4 md:px-8 py-20">
@@ -83,6 +87,8 @@ export default function Home() {
         </div>
       </section>
 
+
+      <IasConectadas />
 
       {/* Equipe apoiada */}
       <section className="max-w-content mx-auto px-4 md:px-8 py-20 md:py-24 grid md:grid-cols-[1fr_1.1fr] gap-12 items-center">
