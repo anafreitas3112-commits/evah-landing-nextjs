@@ -23,13 +23,6 @@ export const produtos = [
     frase: "Quem já gosta da clínica volta a comprar.",
     desc: "Recupera ex-clientes, lembra renovações e organiza a venda para quem está em tratamento.",
   },
-  {
-    slug: "/evah-consultora",
-    nome: "Evah Consultora",
-    tag: "IA na gestão",
-    frase: "Uma IA como consultora da sua clínica.",
-    desc: "Analisa os números, compara com o mercado, monta o plano com você e acompanha a execução.",
-  },
 ];
 
 export function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
@@ -113,9 +106,9 @@ export function OutrasSolucoes({ atual }: { atual: string }) {
   return (
     <section className="bg-surface border-t border-border-subtle">
       <div className="max-w-content mx-auto px-4 md:px-8 py-16">
-        <Titulo eyebrow="Ecossistema Evah" titulo="As soluções conversam entre si" sub="O que acontece no grupo aparece no atendimento, a revenda usa o perfil de cada cliente e a consultora enxerga tudo junto." />
+        <Titulo eyebrow="Ecossistema Evah" titulo="As soluções conversam entre si" sub="O que acontece no grupo aparece no atendimento, a revenda usa o perfil de cada cliente e a consultoria enxerga tudo junto." />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {produtos.filter((p) => p.slug !== atual).map((p) => (
+          {[...produtos, { slug: "/consultoria", nome: "Consultoria com a Ana", frase: "Estratégia, plano e IA na gestão da clínica." }].filter((p) => p.slug !== atual).map((p) => (
             <Link key={p.slug} href={p.slug} className="rounded-2xl border border-border-subtle bg-canvas p-6 flex flex-col gap-2 hover:border-[var(--green-300)]">
               <span className="font-display font-bold text-lg text-text-primary">{p.nome}</span>
               <span className="text-sm text-text-secondary">{p.frase}</span>
