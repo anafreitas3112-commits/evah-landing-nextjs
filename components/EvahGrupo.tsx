@@ -20,9 +20,9 @@ const diagnostico = [
 export default function EvahGrupo() {
   return (
     <section id="evah-grupo" className="max-w-content mx-auto px-4 md:px-8 py-20 md:py-24">
-      <div className="font-mono text-xs uppercase tracking-wide text-accent-strong text-center">Por onde começar</div>
+      <div className="font-mono text-xs uppercase tracking-wide text-accent-strong text-center">O que está incluído</div>
       <h2 className="font-display font-bold text-[30px] md:text-[34px] text-text-primary text-center mt-2 mb-3">
-        Evah Grupo: o grupo VIP volta a conversar e a vender
+        Estratégia, conversa e venda no grupo que você já tem
       </h2>
       <p className="text-center text-text-secondary max-w-[640px] mx-auto mb-12 leading-relaxed">
         Entra no grupo de WhatsApp que a clínica já tem. Não troca o atendimento, não exige CRM novo e

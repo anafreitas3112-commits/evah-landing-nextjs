@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const faqs = [
+const padrao = [
   {
     q: "O que é uma IA como consultora?",
     a: "É a Evah olhando os dados da sua clínica (grupo, conversas, base e vendas), comparando com as melhores práticas do mercado, montando o plano de ação com você e executando o que foi aprovado. Você acompanha tudo por indicadores.",
@@ -32,7 +32,8 @@ const faqs = [
   },
 ];
 
-export default function Faq() {
+export default function Faq({ itens }: { itens?: { q: string; a: string }[] }) {
+  const faqs = itens ?? padrao;
   const [open, setOpen] = useState<number | null>(null);
 
   return (

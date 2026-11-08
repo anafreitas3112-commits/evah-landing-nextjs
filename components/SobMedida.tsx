@@ -23,13 +23,12 @@ export default function SobMedida() {
       <div className="max-w-content mx-auto">
         <div className="grid md:grid-cols-[1fr_1.3fr] gap-10 md:gap-14 items-start">
           <div className="flex flex-col gap-4 md:sticky md:top-28">
-            <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Não é engessado</div>
+            <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Construção sob medida</div>
             <h2 className="font-display font-bold text-[30px] md:text-[34px] text-text-primary leading-tight">
-              O sistema muda com a sua clínica, não o contrário
+              Não é sistema engessado: construímos no jeito da sua clínica
             </h2>
             <p className="text-text-secondary leading-relaxed">
-              CRM pronto obriga a equipe a se adaptar. Na Evah, o app, os indicadores e as rotinas se
-              ajustam ao jeito que a sua clínica vende. Pediu, ajustamos em dias.
+              Sistema pronto obriga a equipe a se adaptar. Aqui é o contrário: além da consultoria, a Kotobuki desenvolve. Telas, indicadores, rotinas e integrações são construídos e ajustados ao jeito que a sua clínica vende. Pediu, ajustamos em dias.
             </p>
             <p className="text-sm text-text-tertiary">Exemplos reais de ajustes feitos a pedido de uma dona de clínica:</p>
           </div>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Evah — Uma IA como consultora da sua clínica",
+  title: "Evah — IA na gestão da sua clínica | Kotobuki",
   description:
-    "A Evah analisa seus números, compara com as melhores práticas do mercado, monta o plano de ação com você e executa. Comece pelo diagnóstico gratuito do seu grupo VIP.",
+    "Consultoria, construção sob medida e IAs que executam: Evah Grupo, Evah Atendimento, Evah Revenda e Evah Consultora.",
 };
 
 export default function RootLayout({
