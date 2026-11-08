@@ -12,6 +12,7 @@ export default function Header() {
           {produtos.map((p) => (
             <Link key={p.slug} href={p.slug} className="text-sm text-text-secondary">{p.nome}</Link>
           ))}
+          <Link href="/#redes" className="text-sm text-text-secondary">Para redes</Link>
         </nav>
         <a href={whatsappDiagnostico} target="_blank" rel="noopener" className="ml-auto lg:ml-0 rounded-lg bg-accent-strong text-white text-sm font-semibold px-4 py-2 hover:bg-green-800 whitespace-nowrap">
           Falar com a Ana
@@ -22,6 +23,7 @@ export default function Header() {
         {produtos.map((p) => (
           <Link key={p.slug} href={p.slug} className="text-text-secondary">{p.nome}</Link>
         ))}
+        <Link href="/#redes" className="text-text-secondary">Para redes</Link>
       </nav>
     </header>
   );

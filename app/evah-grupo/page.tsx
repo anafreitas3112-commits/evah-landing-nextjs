@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import EvahGrupo from "@/components/EvahGrupo";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
-import { CartaoLista, FaixaCta, GradeRecursos, HeroProduto, OutrasSolucoes, Titulo } from "@/components/ui";
+import { TelaPrevia } from "@/components/Telas";
+import { FaixaCta, GradeRecursos, HeroProduto, OutrasSolucoes, Titulo } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Evah Grupo — o grupo VIP da sua clínica volta a vender",
@@ -35,7 +36,7 @@ export default function Page() {
         titulo={<>O grupo VIP da sua clínica volta a <span className="text-accent-strong">conversar e vender</span></>}
         sub="A porta de entrada do ecossistema Evah. Entra no grupo de WhatsApp que você já tem, sem trocar sistema e sem mudar a rotina da equipe."
         cta="Quero o diagnóstico gratuito do grupo"
-        lateral={<CartaoLista titulo="Semana do grupo" rotulo="exemplo" itens={["Segunda: dica de cuidado, sem oferta.", "Quarta: antes e depois com a história da cliente.", "Quinta: oferta com prazo curto, prévia aprovada no seu WhatsApp.", "Sexta: lista de quem reagiu para chamar no privado."]} />}
+        lateral={<TelaPrevia />}
       />
       <EvahGrupo />
       <section className="max-w-content mx-auto px-4 md:px-8 pb-20">

@@ -5,7 +5,7 @@ function Celular({ titulo, cor = "#0f6b4f", children }: { titulo: string; cor?: 
     <div className="mx-auto w-full max-w-[300px] rounded-[34px] bg-[var(--ink-950)] p-2.5 shadow-xl">
       <div className="rounded-[26px] overflow-hidden bg-[#f3f2ee] h-[540px] flex flex-col">
         <div className="h-12 shrink-0 flex items-center px-4 text-white text-sm font-semibold" style={{ background: cor }}>{titulo}</div>
-        <div className="flex-1 overflow-hidden p-3 flex flex-col gap-2 text-[12.5px] leading-snug">{children}</div>
+        <div className="flex-1 overflow-hidden p-3 flex flex-col gap-2 text-[12.5px] leading-snug text-[var(--ink-950)]">{children}</div>
       </div>
     </div>
   );
@@ -85,6 +85,70 @@ export function TelaIndicadores() {
         <div className="mt-1.5 flex flex-col gap-1 text-[var(--ink-600)]">
           <span>1. Renata · 140 pontos</span><span>2. Sílvia · 115 pontos</span><span>3. Cláudia · 90 pontos</span>
         </div>
+      </div>
+    </Celular>
+  );
+}
+
+export function TelaAtendimento() {
+  return (
+    <Celular titulo="Lead · anúncio Instagram">
+      <div className="text-center text-[10.5px] text-[var(--ink-500)]">22:14</div>
+      <Balao de="dona">Oi, vi o anúncio da criolipólise. Quanto custa?</Balao>
+      <Balao de="evah">Oi, Mariana! Que bom que você chamou 💚 Antes do valor, me conta: qual região mais te incomoda hoje?</Balao>
+      <Balao de="dona">Barriga, depois da segunda gestação</Balao>
+      <Balao de="evah">Entendo, é uma das queixas que mais atendemos. Você tem algum evento em vista, ou é para você se sentir bem mesmo?</Balao>
+      <Balao de="dona">Casamento da minha irmã em fevereiro!</Balao>
+      <Balao de="evah">Dá tempo de ver resultado 😊 Consigo um horário amanhã às 10h ou às 15h. Qual fica melhor?</Balao>
+      <div className="self-center mt-1 text-[10.5px] font-semibold text-white bg-[#0f6b4f] rounded px-2 py-0.5">Agendado · consultora avisada</div>
+    </Celular>
+  );
+}
+
+const revenda = [
+  { nome: "Fernanda L.", info: "Ex-cliente · última sessão há 8 meses", acao: "Ligar" },
+  { nome: "Beatriz A.", info: "Termina o pacote esta semana", acao: "Oferecer renovação" },
+  { nome: "Luciana P.", info: "Interesse em flacidez (do grupo)", acao: "Mensagem" },
+];
+
+export function TelaRevenda() {
+  return (
+    <Celular titulo="Minha lista de hoje">
+      <div className="bg-white rounded-xl p-3 border border-[var(--ink-100)] text-center">
+        <b className="text-[13px]">Pedir mais 5 para reativar</b>
+        <div className="text-[11px] text-[var(--ink-500)]">quando você tiver tempo</div>
+      </div>
+      {revenda.map((r) => (
+        <div key={r.nome} className="bg-white rounded-xl p-3 border border-[var(--ink-100)] flex flex-col gap-1">
+          <b className="text-[13px]">{r.nome}</b>
+          <span className="text-[var(--ink-600)]">{r.info}</span>
+          <span className="self-start text-[11px] font-semibold text-white bg-[#0f6b4f] rounded px-2 py-0.5">{r.acao}</span>
+        </div>
+      ))}
+    </Celular>
+  );
+}
+
+const unidades = [
+  { u: "Unidade Centro", v: 92, c: "31%" },
+  { u: "Unidade Norte", v: 78, c: "27%" },
+  { u: "Unidade Sul", v: 61, c: "22%" },
+  { u: "Unidade Leste", v: 44, c: "15%" },
+];
+
+export function TelaRede() {
+  return (
+    <Celular titulo="Evah Rede · unidades" cor="#1c2321">
+      <div className="text-[11px] text-[var(--ink-500)] px-1">Lead → agendamento, últimos 30 dias</div>
+      {unidades.map((x) => (
+        <div key={x.u} className="bg-white rounded-xl p-3 border border-[var(--ink-100)]">
+          <div className="flex justify-between"><b className="text-[13px]">{x.u}</b><span className="font-mono font-bold">{x.c}</span></div>
+          <div className="h-1.5 rounded bg-[var(--ink-100)] mt-2"><div className="h-1.5 rounded bg-[#0f6b4f]" style={{ width: x.v + "%" }} /></div>
+        </div>
+      ))}
+      <div className="bg-white rounded-xl p-3 border border-[var(--ink-100)]">
+        <b className="text-[12.5px]">Migração da Unidade Leste</b>
+        <div className="text-[var(--ink-600)] mt-1">6 de 8 passos concluídos</div>
       </div>
     </Celular>
   );

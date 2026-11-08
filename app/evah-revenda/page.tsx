@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
-import { CartaoLista, FaixaCta, GradeRecursos, HeroProduto, OutrasSolucoes, Titulo } from "@/components/ui";
+import { TelaRevenda } from "@/components/Telas";
+import { FaixaCta, GradeRecursos, HeroProduto, OutrasSolucoes, Titulo } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Evah Revenda — quem já gosta da clínica volta a comprar",
@@ -31,7 +32,7 @@ export default function Page() {
         nome="Evah Revenda"
         titulo={<>Quem já gosta da clínica <span className="text-accent-strong">volta a comprar</span></>}
         sub="Recuperação de ex-clientes, renovação e venda para quem está em tratamento, com a base organizada e cada oferta registrada."
-        lateral={<CartaoLista titulo="Lista de hoje da consultora" rotulo="exemplo" itens={["5 ex-clientes que não vêm há mais de 6 meses.", "3 clientes terminando o pacote esta semana.", "2 ofertas em aberto aguardando resposta.", "Resultado de cada contato volta para o indicador."]} />}
+        lateral={<TelaRevenda />}
       />
       <section className="max-w-content mx-auto px-4 md:px-8 pb-20">
         <Titulo eyebrow="O que faz" titulo="Sua base de clientes trabalhando por você" sub="Vender para quem já conhece a clínica custa menos do que conquistar alguém novo." />
