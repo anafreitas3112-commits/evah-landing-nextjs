@@ -4,13 +4,13 @@ import SobMedida from "@/components/SobMedida";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import FormContato from "@/components/FormContato";
-import { TelaAtendimento, TelaPedido, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
+import { TelaAchados, TelaAtendimento, TelaEquipe, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
 import { BotaoWhats, Titulo } from "@/components/ui";
 
 const pilares = [
   { n: "1", t: "Construído para você", d: "Telas, indicadores, rotinas e integrações feitos no jeito da sua clínica. Pediu, a gente constrói, em dias." },
-  { n: "2", t: "Inteligência conectada", d: "As IAs ligam grupo, leads, conversas, base e vendas: perfil de cada cliente, oportunidades e nutrição no momento certo." },
-  { n: "3", t: "Estratégia e execução", d: "Consultoria de quem já foi dona de clínica para montar o plano, e IAs que executam com a sua aprovação e medem o resultado." },
+  { n: "2", t: "Inteligência conectada", d: "Base de clientes, leads, conversas, agenda, vendas e contas de anúncio (Meta e Google) ligadas. As IAs conversam entre si e encontram onde vender mais." },
+  { n: "3", t: "Estratégia e execução", d: "A consultora monta o plano com você, as IAs agilizam os processos e a equipe de vendas e atendimento recebe tudo pronto para fechar." },
 ];
 
 const solucoes = [
@@ -50,11 +50,12 @@ export default function Home() {
               Evah · operação comercial com IA para clínicas e redes
             </span>
             <h1 className="font-display font-bold text-[36px] md:text-[50px] leading-[1.06] text-text-primary">
-              A gente não te vende um sistema. <span className="text-accent-strong">Constrói o seu.</span>
+              Seus dados, sua equipe, seus processos e as IAs <span className="text-accent-strong">trabalhando juntos para vender mais</span>.
             </h1>
             <p className="text-[17px] text-text-secondary max-w-[530px] leading-relaxed">
-              Inteligência que conecta seus canais e sua base, estratégia com quem já foi dona de clínica
-              e um sistema construído no seu jeito, para vender mais para os clientes e leads que você já tem.
+              Uma consultora de IA ao seu lado. Conectada à sua base de dados, aos processos da clínica e às
+              mídias digitais (Meta e Google), ela analisa os números, mostra onde vender mais e coloca o plano em
+              prática com a sua equipe. E o sistema é construído no seu jeito.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a href="#diagnostico" className="rounded-lg bg-accent-strong text-white font-semibold px-6 py-3.5 hover:bg-green-800">Agendar diagnóstico gratuito</a>
@@ -62,7 +63,7 @@ export default function Home() {
             </div>
             <p className="text-[13px] text-text-tertiary">Mais de 200 melhorias entregues em 3 semanas, a pedido de quem usa. Em uso em unidades de uma rede de franquias de estética.</p>
           </div>
-          <TelaPedido />
+          <TelaAchados />
         </div>
       </section>
 
@@ -79,6 +80,26 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      {/* Equipe apoiada */}
+      <section className="max-w-content mx-auto px-4 md:px-8 py-20 md:py-24 grid md:grid-cols-[1fr_1.1fr] gap-12 items-center">
+        <TelaEquipe />
+        <div className="flex flex-col gap-4">
+          <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Equipe de vendas e atendimento apoiada</div>
+          <h2 className="font-display font-bold text-[30px] md:text-[38px] text-text-primary leading-tight">A IA prepara. A equipe fecha.</h2>
+          <p className="text-text-secondary leading-relaxed">
+            Usando as informações do banco de dados, a IA entrega para cada consultora a lista do dia já
+            priorizada, o contexto de cada cliente (o que falou no grupo, o que já foi oferecido, de qual anúncio
+            veio) e a mensagem sugerida. O repetitivo é automatizado; a conversa que vende continua com a equipe.
+          </p>
+          <ul className="flex flex-col gap-2 text-text-secondary">
+            <li>✓ Menos tempo procurando, mais tempo vendendo</li>
+            <li>✓ Ninguém esquecido: retornos, renovações e faltas viram tarefa</li>
+            <li>✓ A dona vê o que cada pessoa fez e o que deu resultado</li>
+          </ul>
         </div>
       </section>
 
