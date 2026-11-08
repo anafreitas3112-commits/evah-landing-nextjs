@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex items-center gap-6 md:gap-8 h-[64px] md:h-[72px] px-4 md:px-14">
         <Link href="/" className="font-display font-bold text-xl text-accent-strong">Evah</Link>
         <nav className="hidden lg:flex gap-6 flex-1">
-          <Link href="/sob-medida" className="text-sm text-text-secondary">Sob medida</Link>
+          <Link href="/sob-medida" className="text-sm text-text-secondary">IA construtora</Link>
           <Link href="/consultoria" className="text-sm text-text-secondary">Consultoria</Link>
           {produtos.map((p) => (
             <Link key={p.slug} href={p.slug} className="text-sm text-text-secondary">{p.nome}</Link>
@@ -20,7 +20,7 @@ export default function Header() {
         </a>
       </div>
       <nav className="lg:hidden flex gap-5 overflow-x-auto px-4 pb-3 text-sm whitespace-nowrap">
-        <Link href="/sob-medida" className="text-text-secondary">Sob medida</Link>
+        <Link href="/sob-medida" className="text-text-secondary">IA construtora</Link>
         <Link href="/consultoria" className="text-text-secondary">Consultoria</Link>
         {produtos.map((p) => (
           <Link key={p.slug} href={p.slug} className="text-text-secondary">{p.nome}</Link>

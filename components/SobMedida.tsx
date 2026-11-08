@@ -23,15 +23,15 @@ export default function SobMedida() {
       <div className="max-w-content mx-auto">
         <div className="grid md:grid-cols-[1fr_1.3fr] gap-10 md:gap-14 items-start">
           <div className="flex flex-col gap-4 md:sticky md:top-28">
-            <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Construção sob medida</div>
+            <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Sua IA construtora</div>
             <h2 className="font-display font-bold text-[30px] md:text-[34px] text-text-primary leading-tight">
-              Pediu? A gente constrói, em dias.
+              Pediu? A IA constrói para você.
             </h2>
             <p className="text-text-secondary leading-relaxed">
-              Sistema pronto obriga a equipe a se adaptar. Aqui é o contrário: além da consultoria, a Kotobuki desenvolve. Telas, indicadores, rotinas e integrações são construídos e ajustados ao jeito que a sua clínica vende. Pediu, ajustamos em dias.
+              Sistema pronto obriga a equipe a se adaptar. Aqui é o contrário: você tem a sua própria IA construtora. Seu CRM, suas telas, indicadores, rotinas e integrações são personalizados pela IA no jeito que a sua clínica vende, em dias.
             </p>
             <p className="text-sm text-text-tertiary">Exemplos reais de ajustes feitos a pedido de uma dona de clínica:</p>
-            <a href="/sob-medida" className="text-sm font-semibold">Ver como construímos →</a>
+            <a href="/sob-medida" className="text-sm font-semibold">Conhecer a IA construtora →</a>
           </div>
           <div className="flex flex-col gap-4">
             {ajustes.map((a) => (

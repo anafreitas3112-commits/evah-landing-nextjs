@@ -8,7 +8,7 @@ import { TelaAchados, TelaAtendimento, TelaEquipe, TelaPrevia, TelaRede, TelaRev
 import { BotaoWhats, Titulo } from "@/components/ui";
 
 const pilares = [
-  { n: "1", t: "Construído para você", d: "Telas, indicadores, rotinas e integrações feitos no jeito da sua clínica. Pediu, a gente constrói, em dias." },
+  { n: "1", t: "Sua própria IA construtora", d: "Seu CRM, suas telas, indicadores e rotinas, personalizados pela própria IA no jeito da sua clínica. Pediu, a IA constrói para você." },
   { n: "2", t: "Inteligência conectada", d: "Base de clientes, leads, conversas, agenda, vendas e contas de anúncio (Meta e Google) ligadas. As IAs conversam entre si e encontram onde vender mais." },
   { n: "3", t: "Estratégia e execução", d: "A consultora monta o plano com você, as IAs agilizam os processos e a equipe de vendas e atendimento recebe tudo pronto para fechar." },
 ];
@@ -33,7 +33,7 @@ const faq = [
   { q: "Funciona para redes e franquias?", a: "Sim, e foi pensada para isso: cada unidade com seus dados, atendimento padronizado e a gestão da rede comparando as unidades." },
   { q: "A IA vai falar com minhas clientes sem eu ver?", a: "Só se você quiser. Posts e mensagens no privado podem passar antes pelo seu WhatsApp. Saúde, contraindicação e reclamação vão direto para a equipe." },
   { q: "Usa a API oficial do WhatsApp?", a: "O Evah Atendimento pode usar a API oficial. O Evah Grupo usa um número dedicado com integração não oficial, porque a API oficial não participa de grupos; por isso os envios são controlados e aprovados, para reduzir o risco de bloqueio." },
-  { q: "E a LGPD?", a: "Os dados de cada clínica e de cada unidade ficam separados, o acesso é por login da equipe e nada é compartilhado com outras clínicas." },
+  { q: "De quem são os dados?", a: "Seus. A base de dados é da clínica: clientes, leads, conversas e vendas pertencem a você. Os dados de cada clínica e de cada unidade ficam separados, o acesso é por login da equipe e nada é compartilhado com outras clínicas." },
   { q: "A IA substitui minha equipe?", a: "Não. Ela aumenta a produtividade da equipe: cuida do repetitivo, separa quem está pronta para comprar e mostra o que fazer a seguir." },
 ];
 
@@ -55,11 +55,11 @@ export default function Home() {
             <p className="text-[17px] text-text-secondary max-w-[530px] leading-relaxed">
               Uma consultora de IA ao seu lado. Conectada à sua base de dados, aos processos da clínica e às
               mídias digitais (Meta e Google), ela analisa os números, mostra onde vender mais e coloca o plano em
-              prática com a sua equipe. E o sistema é construído no seu jeito.
+              prática com a sua equipe. E o seu CRM é personalizado pela própria IA, no seu jeito.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a href="#diagnostico" className="rounded-lg bg-accent-strong text-white font-semibold px-6 py-3.5 hover:bg-green-800">Agendar diagnóstico gratuito</a>
-              <a href="/sob-medida" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Como construímos</a>
+              <a href="/sob-medida" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Sua IA construtora</a>
             </div>
             <p className="text-[13px] text-text-tertiary">Mais de 200 melhorias entregues em 3 semanas, a pedido de quem usa. Em uso em unidades de uma rede de franquias de estética.</p>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
             e 10 anos como dona de clínicas de estética e emagrecimento, com responsabilidade total pelos
             resultados.
           </p>
-          <p className="text-sm text-text-secondary leading-relaxed">Ela entende a meta da semana e sabe construir a solução.</p>
+          <p className="text-sm text-text-secondary leading-relaxed">Ela entende a meta da semana e sabe transformar isso em solução.</p>
           <Link href="/ana" className="text-sm font-semibold">Cartão da Ana →</Link>
         </div>
       </section>

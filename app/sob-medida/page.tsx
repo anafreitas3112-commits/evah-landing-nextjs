@@ -8,12 +8,12 @@ import { TelaPedido } from "@/components/Telas";
 import { FaixaCta, GradeRecursos, HeroProduto, OutrasSolucoes, Titulo } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Sob medida — o sistema que muda com a sua clínica | Evah",
-  description: "A Kotobuki constrói telas, indicadores, rotinas, integrações e IAs no jeito da sua clínica. Pediu, a gente constrói, em dias.",
+  title: "Sua IA construtora — seu CRM personalizado pela IA | Evah",
+  description: "Sua própria IA construtora: seu CRM, telas, indicadores, rotinas e integrações personalizados pela IA no jeito da sua clínica. Pediu, a IA constrói para você.",
 };
 
 const construimos = [
-  { t: "Telas e apps para a equipe", d: "Chat, funil, agenda, tarefas e ficha da cliente organizados do jeito que a sua equipe trabalha." },
+  { t: "Seu CRM personalizado", d: "Chat, funil, agenda, tarefas e ficha da cliente, do jeito que a sua equipe trabalha. Não é um CRM genérico: é o seu." },
   { t: "Indicadores que abrem a lista", d: "O número que importa para você, com a lista de quem agir por trás de cada um." },
   { t: "Rotinas automáticas", d: "Lembretes, tarefas, retornos, recuperação e pós-venda acontecendo sozinhos, na hora certa." },
   { t: "Integrações", d: "Sistema de vendas, agenda, anúncios da Meta e WhatsApp conversando com a Evah." },
@@ -32,7 +32,8 @@ const faq = [
   { q: "Quanto tempo leva um ajuste?", a: "Ajustes pequenos ficam prontos em dias. Funcionalidades maiores entram com prazo combinado antes." },
   { q: "Ajuste tem custo extra?", a: "A mensalidade inclui ajustes todo mês. Projetos maiores, como uma integração nova, têm prazo e valor combinados antes de começar." },
   { q: "Preciso saber de tecnologia para pedir?", a: "Não. Você pede como pediria para alguém da equipe, até por WhatsApp. A gente traduz em tela, rotina ou indicador." },
-  { q: "Vocês constroem para outros negócios além de clínicas?", a: "Sim. A Kotobuki constrói para negócios que vendem pelo WhatsApp e têm base de clientes: odontologia, academias, escolas, imobiliárias e outros." },
+  { q: "De quem são os dados?", a: "Seus. A base de dados é da clínica: clientes, leads, conversas e vendas pertencem a você, separados de qualquer outra clínica." },
+  { q: "Funciona para outros negócios além de clínicas?", a: "Sim. A IA constrói para negócios que vendem pelo WhatsApp e têm base de clientes: odontologia, academias, escolas, imobiliárias e outros." },
 ];
 
 export default function Page() {
@@ -40,9 +41,9 @@ export default function Page() {
     <main>
       <Header />
       <HeroProduto
-        nome="Sob medida"
-        titulo={<>O sistema que <span className="text-accent-strong">muda com a sua clínica</span></>}
-        sub="A gente não te vende um sistema pronto. Constrói o seu: telas, indicadores, rotinas, integrações e IAs no jeito que a sua clínica vende. Pediu, a gente constrói, em dias."
+        nome="Sua IA construtora"
+        titulo={<>Pediu? <span className="text-accent-strong">A IA constrói para você.</span></>}
+        sub="Você não compra um sistema pronto. Tem a sua própria IA construtora: seu CRM, telas, indicadores, rotinas e integrações personalizados pela IA no jeito que a sua clínica vende. E os dados são seus."
         cta="Quero contar o que preciso"
         lateral={<TelaPedido />}
       />
@@ -55,7 +56,7 @@ export default function Page() {
       </section>
       <SobMedida />
       <section className="max-w-content mx-auto px-4 md:px-8 py-20 md:py-24">
-        <Titulo eyebrow="O que construímos" titulo="Tudo o que a sua operação comercial precisa" />
+        <Titulo eyebrow="O que a IA constrói" titulo="Seu CRM e tudo o que a sua operação comercial precisa" />
         <GradeRecursos itens={construimos} />
       </section>
       <section className="bg-surface border-y border-border-subtle">
@@ -76,14 +77,14 @@ export default function Page() {
         <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Não é só para clínicas</div>
         <h2 className="font-display font-bold text-[28px] md:text-[34px] text-text-primary leading-tight">Seu negócio vende pelo WhatsApp e tem base de clientes?</h2>
         <p className="text-text-secondary leading-relaxed max-w-[620px]">
-          A Kotobuki constrói a mesma inteligência para odontologia, academias, escolas, imobiliárias e outros
+          A IA constrói a mesma inteligência para odontologia, academias, escolas, imobiliárias e outros
           negócios: base organizada, leads acompanhados, oportunidades encontradas e indicadores para decidir.
         </p>
         <Link href="/consultoria" className="text-sm font-semibold">Conhecer a consultoria →</Link>
       </section>
       <Faq itens={faq} />
       <OutrasSolucoes atual="/sob-medida" />
-      <FaixaCta titulo="O que a sua clínica precisa que nenhum sistema faz?" texto="Conte para a Ana. Na conversa de diagnóstico, a gente desenha juntas o que construir primeiro." />
+      <FaixaCta titulo="O que a sua clínica precisa que nenhum sistema faz?" texto="Conte para a Ana. Na conversa de diagnóstico, vocês desenham juntas o que a IA vai construir primeiro." />
       <Footer />
     </main>
   );

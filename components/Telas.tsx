@@ -156,12 +156,12 @@ export function TelaRede() {
 
 export function TelaPedido() {
   return (
-    <Celular titulo="Ana · Evah" cor="#075e54">
+    <Celular titulo="Evah · IA construtora" cor="#075e54">
       <div className="text-center text-[10.5px] text-[var(--ink-500)]">segunda, 9:12</div>
-      <Balao de="dona">Ana, queria ver numa tela só as clientes que disseram que vão pensar, com o valor que ofereci.</Balao>
-      <Balao de="evah">Faz sentido! Vou colocar no app, com a lista e o valor de cada oferta. Fica pronto até quarta 💚</Balao>
+      <Balao de="dona">Queria ver numa tela só as clientes que disseram que vão pensar, com o valor que ofereci.</Balao>
+      <Balao de="evah">Entendi! Vou construir essa tela no seu CRM, com a lista e o valor de cada oferta. Fica pronta até quarta 💚</Balao>
       <div className="text-center text-[10.5px] text-[var(--ink-500)] mt-1">quarta, 16:40</div>
-      <Balao de="evah">Pronto! Já está no app, em “Negociando”.</Balao>
+      <Balao de="evah">Pronto! Já está no seu CRM, em “Negociando”.</Balao>
       <div className="bg-white rounded-xl p-3 border border-[var(--ink-100)] flex flex-col gap-1.5 mt-1">
         <div className="flex items-center justify-between"><b className="text-[13px]">Negociando</b><span className="text-[10.5px] font-bold text-white bg-[#0f6b4f] rounded px-1.5 py-0.5">Novo</span></div>
         <div className="flex justify-between"><span>Patrícia S.</span><b>3x R$ 199</b></div>
