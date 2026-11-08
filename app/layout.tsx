@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Evah — A operação comercial inteligente para clínicas",
+  title: "Evah — Uma IA como consultora da sua clínica",
   description:
-    "Enquanto sua equipe cuida de quem já é paciente, a Evah atende, qualifica e agenda novos leads pelo WhatsApp — 24 horas por dia.",
+    "A Evah analisa seus números, compara com as melhores práticas do mercado, monta o plano de ação com você e executa. Comece pelo diagnóstico gratuito do seu grupo VIP.",
 };
 
 export default function RootLayout({
