@@ -153,3 +153,67 @@ export function TelaRede() {
     </Celular>
   );
 }
+
+export function TelaPedido() {
+  return (
+    <Celular titulo="Evah · IA construtora" cor="#075e54">
+      <div className="text-center text-[10.5px] text-[var(--ink-500)]">segunda, 9:12</div>
+      <Balao de="dona">Queria ver numa tela só as clientes que disseram que vão pensar, com o valor que ofereci.</Balao>
+      <Balao de="evah">Entendi! Vou construir essa tela no seu CRM, com a lista e o valor de cada oferta. Fica pronta até quarta 💚</Balao>
+      <div className="text-center text-[10.5px] text-[var(--ink-500)] mt-1">quarta, 16:40</div>
+      <Balao de="evah">Pronto! Já está no seu CRM, em “Negociando”.</Balao>
+      <div className="bg-white rounded-xl p-3 border border-[var(--ink-100)] flex flex-col gap-1.5 mt-1">
+        <div className="flex items-center justify-between"><b className="text-[13px]">Negociando</b><span className="text-[10.5px] font-bold text-white bg-[#0f6b4f] rounded px-1.5 py-0.5">Novo</span></div>
+        <div className="flex justify-between"><span>Patrícia S.</span><b>3x R$ 199</b></div>
+        <div className="flex justify-between"><span>Camila R.</span><b>R$ 890</b></div>
+        <div className="flex justify-between"><span>Débora M.</span><b>2x R$ 349</b></div>
+      </div>
+      <div className="self-center text-[11px] font-semibold text-[#0f6b4f]">Pedido na segunda, no ar na quarta</div>
+    </Celular>
+  );
+}
+
+const achados = [
+  { t: "Leads respondidos em até 5 minutos agendam 3x mais. Hoje, 40% esperam mais de 1 hora.", a: "Atendimento responde na hora" },
+  { t: "No Meta, a campanha “Contorno” custa 2x mais por agendamento que a “Flacidez”.", a: "Mover verba para Flacidez" },
+  { t: "600 ex-clientes com perfil de recompra. Se 5% voltarem: +R$ 18 mil no mês.", a: "Campanha de retorno" },
+];
+
+export function TelaAchados() {
+  return (
+    <Celular titulo="Consultora · achados da semana">
+      <div className="text-[11px] text-[var(--ink-500)] px-1">Base, agenda, vendas, conversas, Meta e Google</div>
+      {achados.map((x) => (
+        <div key={x.a} className="bg-white rounded-xl p-3 border-l-4 border-[#0f6b4f] flex flex-col gap-1.5">
+          <span className="text-[12.5px] leading-snug">{x.t}</span>
+          <span className="text-[11.5px] font-bold text-[#0f6b4f]">→ {x.a}</span>
+        </div>
+      ))}
+      <div className="flex gap-2 mt-auto">
+        <span className="flex-1 text-center rounded-lg bg-[#0f6b4f] text-white text-[12px] font-bold py-2">Aprovar plano</span>
+        <span className="flex-1 text-center rounded-lg bg-white border border-[var(--ink-100)] text-[12px] font-bold py-2">Ajustar</span>
+      </div>
+    </Celular>
+  );
+}
+
+const lista = [
+  { n: "Renata S.", c: "Ex-cliente · interesse em flacidez (grupo) · última oferta: vai pensar", m: "Oi, Renata! Separei uma condição para quem já é da casa…" },
+  { n: "Mariana C.", c: "Lead do Meta · agendou e faltou ontem", m: "Oi, Mariana! Sentimos sua falta ontem. Posso remarcar?" },
+];
+
+export function TelaEquipe() {
+  return (
+    <Celular titulo="Lista do dia · consultora">
+      <div className="text-[11px] text-[var(--ink-500)] px-1">Priorizada pela IA · 12 contatos</div>
+      {lista.map((x) => (
+        <div key={x.n} className="bg-white rounded-xl p-3 border border-[var(--ink-100)] flex flex-col gap-1.5">
+          <b className="text-[13px]">{x.n}</b>
+          <span className="text-[11.5px] text-[var(--ink-600)] leading-snug">{x.c}</span>
+          <span className="text-[12px] bg-[#d9fdd3] rounded-lg px-2 py-1.5 leading-snug">{x.m}</span>
+          <span className="self-start text-[11px] font-bold text-white bg-[#0f6b4f] rounded px-2 py-0.5">Enviar</span>
+        </div>
+      ))}
+    </Celular>
+  );
+}

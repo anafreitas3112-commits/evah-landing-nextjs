@@ -10,6 +10,7 @@ export default function Footer() {
         <div className="text-xs text-text-tertiary">Uma solução Kotobuki · consultoria e desenvolvimento em IA</div>
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <Link href="/sob-medida">IA construtora</Link>
         <Link href="/consultoria">Consultoria</Link>
         {produtos.map((p) => <Link key={p.slug} href={p.slug}>{p.nome}</Link>)}
         <a href={whatsappDiagnostico} target="_blank" rel="noopener">WhatsApp {whatsappExibicao}</a>

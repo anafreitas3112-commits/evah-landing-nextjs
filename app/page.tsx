@@ -4,13 +4,15 @@ import SobMedida from "@/components/SobMedida";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import FormContato from "@/components/FormContato";
-import { TelaAtendimento, TelaIndicadores, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
+import IasConectadas from "@/components/IasConectadas";
+import VideoEvah from "@/components/VideoEvah";
+import { TelaAchados, TelaAtendimento, TelaEquipe, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
 import { BotaoWhats, Titulo } from "@/components/ui";
 
 const pilares = [
-  { n: "1", t: "Consultoria", d: "Diagnóstico do momento da clínica, estratégia, meta e plano de ação, com quem já foi dona de clínica." },
-  { n: "2", t: "IAs que executam", d: "No grupo, no atendimento e na base de clientes, todos os dias, com a sua aprovação onde você quiser." },
-  { n: "3", t: "Sob medida", d: "Telas, indicadores e rotinas construídos no jeito da sua clínica. Não é sistema engessado." },
+  { n: "1", t: "Sua própria IA construtora", d: "Seu CRM, suas telas, indicadores e rotinas, personalizados pela própria IA no jeito da sua clínica. Pediu, a IA constrói para você." },
+  { n: "2", t: "Inteligência conectada", d: "Base de clientes, leads, conversas, agenda, vendas e contas de anúncio (Meta e Google) ligadas. As IAs conversam entre si e encontram onde vender mais." },
+  { n: "3", t: "Estratégia e execução", d: "A consultora monta o plano com você, as IAs agilizam os processos e a equipe de vendas e atendimento recebe tudo pronto para fechar." },
 ];
 
 const solucoes = [
@@ -33,7 +35,7 @@ const faq = [
   { q: "Funciona para redes e franquias?", a: "Sim, e foi pensada para isso: cada unidade com seus dados, atendimento padronizado e a gestão da rede comparando as unidades." },
   { q: "A IA vai falar com minhas clientes sem eu ver?", a: "Só se você quiser. Posts e mensagens no privado podem passar antes pelo seu WhatsApp. Saúde, contraindicação e reclamação vão direto para a equipe." },
   { q: "Usa a API oficial do WhatsApp?", a: "O Evah Atendimento pode usar a API oficial. O Evah Grupo usa um número dedicado com integração não oficial, porque a API oficial não participa de grupos; por isso os envios são controlados e aprovados, para reduzir o risco de bloqueio." },
-  { q: "E a LGPD?", a: "Os dados de cada clínica e de cada unidade ficam separados, o acesso é por login da equipe e nada é compartilhado com outras clínicas." },
+  { q: "De quem são os dados?", a: "Seus. A base de dados é da clínica: clientes, leads, conversas e vendas pertencem a você. Os dados de cada clínica e de cada unidade ficam separados, o acesso é por login da equipe e nada é compartilhado com outras clínicas." },
   { q: "A IA substitui minha equipe?", a: "Não. Ela aumenta a produtividade da equipe: cuida do repetitivo, separa quem está pronta para comprar e mostra o que fazer a seguir." },
 ];
 
@@ -50,26 +52,29 @@ export default function Home() {
               Evah · operação comercial com IA para clínicas e redes
             </span>
             <h1 className="font-display font-bold text-[36px] md:text-[50px] leading-[1.06] text-text-primary">
-              Sua clínica vendendo mais para a <span className="text-accent-strong">base e os leads que já tem</span>.
+              Seus dados, sua equipe, seus processos e as IAs <span className="text-accent-strong">trabalhando juntos para vender mais</span>.
             </h1>
             <p className="text-[17px] text-text-secondary max-w-[530px] leading-relaxed">
-              Consultoria de quem já foi dona de clínica, IAs que executam no WhatsApp e um sistema
-              construído no seu jeito, com indicadores em cada passo.
+              Uma consultora de IA ao seu lado. Conectada à sua base de dados, aos processos da clínica e às
+              mídias digitais (Meta e Google), ela analisa os números, mostra onde vender mais e coloca o plano em
+              prática com a sua equipe. E o seu CRM é personalizado pela própria IA, no seu jeito.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a href="#diagnostico" className="rounded-lg bg-accent-strong text-white font-semibold px-6 py-3.5 hover:bg-green-800">Agendar diagnóstico gratuito</a>
-              <a href="#redes" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Para redes e franquias</a>
+              <a href="/sob-medida" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Sua IA construtora</a>
             </div>
-            <p className="text-[13px] text-text-tertiary">Em uso em unidades de uma rede de franquias de estética.</p>
+            <p className="text-[13px] text-text-tertiary">Mais de 200 melhorias entregues em 3 semanas, a pedido de quem usa. Em uso em unidades de uma rede de franquias de estética.</p>
           </div>
-          <TelaIndicadores />
+          <TelaAchados />
         </div>
       </section>
+
+      <VideoEvah />
 
       {/* Pilares */}
       <section className="bg-surface border-y border-border-subtle">
         <div className="max-w-content mx-auto px-4 md:px-8 py-20">
-          <Titulo eyebrow="Não é CRM. Não é chatbot." titulo="Uma operação comercial completa, em três partes" />
+          <Titulo eyebrow="Não é CRM. Não é chatbot." titulo="Construção, inteligência e estratégia, juntas" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {pilares.map((p) => (
               <div key={p.n} className="rounded-2xl bg-canvas border border-border-subtle p-7 flex flex-col gap-2">
@@ -79,6 +84,28 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      <IasConectadas />
+
+      {/* Equipe apoiada */}
+      <section className="max-w-content mx-auto px-4 md:px-8 py-20 md:py-24 grid md:grid-cols-[1fr_1.1fr] gap-12 items-center">
+        <TelaEquipe />
+        <div className="flex flex-col gap-4">
+          <div className="font-mono text-xs uppercase tracking-wide text-accent-strong">Equipe de vendas e atendimento apoiada</div>
+          <h2 className="font-display font-bold text-[30px] md:text-[38px] text-text-primary leading-tight">A IA prepara. A equipe fecha.</h2>
+          <p className="text-text-secondary leading-relaxed">
+            Usando as informações do banco de dados, a IA entrega para cada consultora a lista do dia já
+            priorizada, o contexto de cada cliente (o que falou no grupo, o que já foi oferecido, de qual anúncio
+            veio) e a mensagem sugerida. O repetitivo é automatizado; a conversa que vende continua com a equipe.
+          </p>
+          <ul className="flex flex-col gap-2 text-text-secondary">
+            <li>✓ Menos tempo procurando, mais tempo vendendo</li>
+            <li>✓ Ninguém esquecido: retornos, renovações e faltas viram tarefa</li>
+            <li>✓ A dona vê o que cada pessoa fez e o que deu resultado</li>
+          </ul>
         </div>
       </section>
 
@@ -141,7 +168,7 @@ export default function Home() {
             e 10 anos como dona de clínicas de estética e emagrecimento, com responsabilidade total pelos
             resultados.
           </p>
-          <p className="text-sm text-text-secondary leading-relaxed">Ela entende a meta da semana e sabe construir a solução.</p>
+          <p className="text-sm text-text-secondary leading-relaxed">Ela entende a meta da semana e sabe transformar isso em solução.</p>
           <Link href="/ana" className="text-sm font-semibold">Cartão da Ana →</Link>
         </div>
       </section>
