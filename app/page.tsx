@@ -4,13 +4,13 @@ import SobMedida from "@/components/SobMedida";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import FormContato from "@/components/FormContato";
-import { TelaAtendimento, TelaIndicadores, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
+import { TelaAtendimento, TelaPedido, TelaPrevia, TelaRede, TelaRevenda } from "@/components/Telas";
 import { BotaoWhats, Titulo } from "@/components/ui";
 
 const pilares = [
-  { n: "1", t: "Consultoria", d: "Diagnóstico do momento da clínica, estratégia, meta e plano de ação, com quem já foi dona de clínica." },
-  { n: "2", t: "IAs que executam", d: "No grupo, no atendimento e na base de clientes, todos os dias, com a sua aprovação onde você quiser." },
-  { n: "3", t: "Sob medida", d: "Telas, indicadores e rotinas construídos no jeito da sua clínica. Não é sistema engessado." },
+  { n: "1", t: "Construído para você", d: "Telas, indicadores, rotinas e integrações feitos no jeito da sua clínica. Pediu, a gente constrói, em dias." },
+  { n: "2", t: "Inteligência conectada", d: "As IAs ligam grupo, leads, conversas, base e vendas: perfil de cada cliente, oportunidades e nutrição no momento certo." },
+  { n: "3", t: "Estratégia e execução", d: "Consultoria de quem já foi dona de clínica para montar o plano, e IAs que executam com a sua aprovação e medem o resultado." },
 ];
 
 const solucoes = [
@@ -50,26 +50,26 @@ export default function Home() {
               Evah · operação comercial com IA para clínicas e redes
             </span>
             <h1 className="font-display font-bold text-[36px] md:text-[50px] leading-[1.06] text-text-primary">
-              Sua clínica vendendo mais para a <span className="text-accent-strong">base e os leads que já tem</span>.
+              A gente não te vende um sistema. <span className="text-accent-strong">Constrói o seu.</span>
             </h1>
             <p className="text-[17px] text-text-secondary max-w-[530px] leading-relaxed">
-              Consultoria de quem já foi dona de clínica, IAs que executam no WhatsApp e um sistema
-              construído no seu jeito, com indicadores em cada passo.
+              Inteligência que conecta seus canais e sua base, estratégia com quem já foi dona de clínica
+              e um sistema construído no seu jeito, para vender mais para os clientes e leads que você já tem.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a href="#diagnostico" className="rounded-lg bg-accent-strong text-white font-semibold px-6 py-3.5 hover:bg-green-800">Agendar diagnóstico gratuito</a>
-              <a href="#redes" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Para redes e franquias</a>
+              <a href="/sob-medida" className="rounded-lg border border-border-default text-text-primary font-semibold px-6 py-3.5 hover:bg-surface-sunken">Como construímos</a>
             </div>
-            <p className="text-[13px] text-text-tertiary">Em uso em unidades de uma rede de franquias de estética.</p>
+            <p className="text-[13px] text-text-tertiary">Mais de 200 melhorias entregues em 3 semanas, a pedido de quem usa. Em uso em unidades de uma rede de franquias de estética.</p>
           </div>
-          <TelaIndicadores />
+          <TelaPedido />
         </div>
       </section>
 
       {/* Pilares */}
       <section className="bg-surface border-y border-border-subtle">
         <div className="max-w-content mx-auto px-4 md:px-8 py-20">
-          <Titulo eyebrow="Não é CRM. Não é chatbot." titulo="Uma operação comercial completa, em três partes" />
+          <Titulo eyebrow="Não é CRM. Não é chatbot." titulo="Construção, inteligência e estratégia, juntas" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {pilares.map((p) => (
               <div key={p.n} className="rounded-2xl bg-canvas border border-border-subtle p-7 flex flex-col gap-2">

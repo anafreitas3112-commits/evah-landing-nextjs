@@ -153,3 +153,22 @@ export function TelaRede() {
     </Celular>
   );
 }
+
+export function TelaPedido() {
+  return (
+    <Celular titulo="Ana · Evah" cor="#075e54">
+      <div className="text-center text-[10.5px] text-[var(--ink-500)]">segunda, 9:12</div>
+      <Balao de="dona">Ana, queria ver numa tela só as clientes que disseram que vão pensar, com o valor que ofereci.</Balao>
+      <Balao de="evah">Faz sentido! Vou colocar no app, com a lista e o valor de cada oferta. Fica pronto até quarta 💚</Balao>
+      <div className="text-center text-[10.5px] text-[var(--ink-500)] mt-1">quarta, 16:40</div>
+      <Balao de="evah">Pronto! Já está no app, em “Negociando”.</Balao>
+      <div className="bg-white rounded-xl p-3 border border-[var(--ink-100)] flex flex-col gap-1.5 mt-1">
+        <div className="flex items-center justify-between"><b className="text-[13px]">Negociando</b><span className="text-[10.5px] font-bold text-white bg-[#0f6b4f] rounded px-1.5 py-0.5">Novo</span></div>
+        <div className="flex justify-between"><span>Patrícia S.</span><b>3x R$ 199</b></div>
+        <div className="flex justify-between"><span>Camila R.</span><b>R$ 890</b></div>
+        <div className="flex justify-between"><span>Débora M.</span><b>2x R$ 349</b></div>
+      </div>
+      <div className="self-center text-[11px] font-semibold text-[#0f6b4f]">Pedido na segunda, no ar na quarta</div>
+    </Celular>
+  );
+}
